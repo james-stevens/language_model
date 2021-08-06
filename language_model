@@ -245,7 +245,6 @@ if args.learn is not None:
     token2int = {t: i for i, t in int2token.items()}
 
     print(f"Check '{args.check_word}' is present:",token2int[args.check_word], int2token[token2int[args.check_word]])
-    sys.exit(0)
 
     with open(args.learn + "_tokens.pickle","wb") as pkl:
         pickle.dump(int2token,pkl)
@@ -266,7 +265,6 @@ if args.learn is not None:
     y_int = np.array(y_int)
     # instantiate the model
     net = WordLSTM()
-    print(net)
 
     # train the model
     train(net, batch_size = 32, epochs=20, print_every=256)
