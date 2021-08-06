@@ -22,7 +22,7 @@ in generating text later.
 
 ## Generate Mode
 
-In generate mode, it will generate text from a NN you have previously generated in Learn Mode. I have include an NN I created from
+In generate mode, it will generate text from a NN you have previously generated in Learn Mode. I have included an NN I created from
 500 movie reviews (as per Prateek Joshi) - called `plots`.
 
 This means you can start generating text right away by using the NN I have provided.
@@ -33,10 +33,9 @@ Example
 
 	$ ./language_model -g plots -n 50 -s "the man stopped"
 
-	the man stopped with the rest effect of bobbili sanchez wyatt in a clinical
-	dramatic line in defiance of the inventor akston arrives in a clinical depression
-	run in the third scene are forced to be a serious to a girl and is facing
-	eviction in a ritual and the other character has
+	the man stopped with the rest effect of bobbili sanchez wyatt in a clinical dramatic line in defiance
+	of the inventor akston arrives in a clinical depression run in the third scene are forced to be a
+	serious to a girl and is facing eviction in a ritual and the other character has
 
 Its something. Like I said "nonsense".
 
