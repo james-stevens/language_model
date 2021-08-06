@@ -38,12 +38,13 @@ import torch.nn.functional as F
 def create_seq(text, seq_len = 5):
     
     sequences = []
+    text_seq = text.split()
 
     # if the number of tokens in 'text' is greater than 5
-    if len(text.split()) > seq_len:
-        for i in range(seq_len, len(text.split())):
+    if len(text_seq) > seq_len:
+        for i in range(seq_len, len(text_seq)):
             # select sequence of tokens
-            seq = text.split()[i-seq_len:i+1]
+            seq = text_seq[i-seq_len:i+1]
             # add to the list
             sequences.append(" ".join(seq))
 
@@ -51,6 +52,7 @@ def create_seq(text, seq_len = 5):
 
     # if the number of tokens in 'text' is less than or equal to 5
     return [text]
+
 
 
 class WordLSTM(nn.Module):
