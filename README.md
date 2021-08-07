@@ -42,6 +42,11 @@ Example
 	Lo a man hath given me to be a great earthquake in a city and they were not written and
 	they shall come unto him that is of the city of God which was of God
 
+	$ ./language_model -g King_James_Bible -s "Lo"  -n 37
+
+	Above he was a great multitude in the temple of the earth and the earth shall come and
+	the earth and he was the second beast and the earth was not able as he is the Son
+
 
 Its something. Like I said "nonsense".
 
