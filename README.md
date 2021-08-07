@@ -37,6 +37,12 @@ Example
 	of the inventor akston arrives in a clinical depression run in the third scene are forced to be a
 	serious to a girl and is facing eviction in a ritual and the other character has
 
+	$ ./language_model -g King_James_Bible -s "Lo"  -n 35
+
+	Lo a man hath given me to be a great earthquake in a city and they were not written and
+	they shall come unto him that is of the city of God which was of God
+
+
 Its something. Like I said "nonsense".
 
 
