@@ -22,12 +22,14 @@ in generating text later.
 
 ## Generate Mode
 
-In generate mode, it will generate text from a NN you have previously generated in Learn Mode. I have included an NN I created from
-500 movie reviews (as per Prateek Joshi) - called `plots`.
+In generate mode, it will generate text from a NN you have previously generated in Learn Mode. I have included a few NN I created.
+`plots.pickle` are paragraphs of movie plots, the `txt` files explain themselves.
 
-This means you can start generating text right away by using the NN I have provided.
+This means you can start generating text right away by using any NN I have provided.
 
 Generally it produces nonsense that sounds vaguely like it might be English. Just a bit of fun.
+`plots` is the least amount of text, so is the most meaningless. The King James Bible & The Complete Works of Shakespeare
+provide enough text to be almost meaningful and definitely reproduce something of the linguistic style of the training data.
 
 Example
 
@@ -42,7 +44,7 @@ Example
 	Lo a man hath given me to be a great earthquake in a city and they were not written and
 	they shall come unto him that is of the city of God which was of God
 
-	$ ./language_model -g King_James_Bible -s "Lo"  -n 37
+	$ ./language_model -g King_James_Bible -s "Above"  -n 37
 
 	Above he was a great multitude in the temple of the earth and the earth shall come and
 	the earth and he was the second beast and the earth was not able as he is the Son
@@ -51,6 +53,12 @@ Example
 
 	inequality in my heart And with his face she is a boar of his eyes and all his eyes and all the world
 	that he hath been so bold and in the ground And in her
+
+	$ ./language_model -g Complete_Works_of_Shakespeare -n 35 -s "Love"
+
+	Love is the shadow of her eyes are in his eyes the world doth bear her to his eyes and his heart and
+	his eyes are dead and all his eyes and the world doth bear
+
 
 
 
