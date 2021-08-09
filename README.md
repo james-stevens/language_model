@@ -47,6 +47,12 @@ Example
 	Above he was a great multitude in the temple of the earth and the earth shall come and
 	the earth and he was the second beast and the earth was not able as he is the Son
 
+	$ ./language_model -g Complete_Works_of_Shakespeare -n 35 -s "inequality"
+
+	inequality in my heart And with his face she is a boar of his eyes and all his eyes and all the world
+	that he hath been so bold and in the ground And in her
+
+
 
 Its something. Like I said "nonsense".
 
