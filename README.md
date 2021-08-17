@@ -59,10 +59,17 @@ Example
 	Love is the shadow of her eyes are in his eyes the world doth bear her to his eyes and his heart and
 	his eyes are dead and all his eyes and the world doth bear
 
+	$ ./language_model -g Tolstoy -s "When I opened the door" -n 50
+
+	When I opened the door and the first day in my eyes in a new face in a new and happy smile of my life
+	I was in a new way and the same feeling which had been so much and that he was in the same way and
+	I had not been in my
 
 
+NOTE: Becuase of the github file size limit, the `Tolstoy` NN has bene split into 5 files, you need to run this to remake the model file
 
-Its something. Like I said "nonsense".
+	$ cat Tolstoy_model.pickle.part_* > Tolstoy_model.pickle
+
 
 
 # Command Line Options
