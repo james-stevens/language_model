@@ -66,7 +66,7 @@ Example
 	I had not been in my
 
 
-NOTE: Becuase of the github file size limit, the `Tolstoy` NN has bene split into 5 files, you need to run this to remake the model file
+NOTE: Becuase of the github file size limit, the `Tolstoy` NN has been split into 5 files, you need to run this to remake the model file
 
 	$ cat Tolstoy_model.pickle.part_* > Tolstoy_model.pickle
 
@@ -90,11 +90,16 @@ NOTE: Becuase of the github file size limit, the `Tolstoy` NN has bene split int
 							Seed Text
 	  -n NUMBER, --number NUMBER
 							Number of words to output
+	  -t NUM_TOKENS, --num-tokens NUM_TOKENS
+                            Number of words in a rows to use to make one sequence
+
 
 `--learn [file]` will take one parameter, which is the name of the text or pickle file to train from. A text file should
 be a series of paragraphs broken with blank lines. A pickle file should be an array of paragraphs.
 
-Once it has loaded the file, it will check one word can be correctly tokenised, the default is `the`, but if this word doe not
+When learning, by default, it uses sequences of 5 words `-t`/`--num-tokens` lets you change this to any value you like.
+
+Once it has loaded the file, it will check one word can be correctly tokenised, the default is `the`, but if this word does not
 appear in your training data, then you will need to give it a different check work.
 
 `--generate [file]` - this will load a pre-created NN and generate text, you can seed the text with the `--seed` option 

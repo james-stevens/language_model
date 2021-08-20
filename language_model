@@ -21,6 +21,7 @@ parser.add_argument("-c", '--check-word', help='Check this word can be tokenised
 parser.add_argument("-g", '--generate', help='Make some text from seed provided')
 parser.add_argument("-s", '--seed-text', help='Seed Text')
 parser.add_argument("-n", '--number', help='Number of words to output',default=15,type=int)
+parser.add_argument("-t", '--num-tokens', help='Number of words in a rows to use to make one sequence',default=5,type=int)
 args = parser.parse_args()
 
 if (args.learn is None) and (args.generate is None):
@@ -35,7 +36,7 @@ import torch.nn.functional as F
 
 
 # create sequences of length 5 tokens
-def create_seq(text, seq_len = 5):
+def create_seq(text, seq_len = args.num_tokens):
     
     sequences = []
     text_seq = text.split()
@@ -357,5 +358,7 @@ if args.generate:
 
     net = torch.load(nn_file)
 
-    seed = args.seed_text if args.seed_text is not None else ""
-    print(sample(net, args.number, prime = seed))
+    if args.seed_text is not None:
+        print(sample(net, args.number, prime = args.seed_text))
+    else:
+        print(sample(net, args.number))
