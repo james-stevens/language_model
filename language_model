@@ -21,7 +21,7 @@ parser.add_argument("-c", '--check-word', help='Check this word can be tokenised
 parser.add_argument("-g", '--generate', help='Make some text from seed provided')
 parser.add_argument("-s", '--seed-text', help='Seed Text')
 parser.add_argument("-n", '--number', help='Number of words to output',default=15,type=int)
-parser.add_argument("-t", '--num-tokens', help='Number of words in a rows to use to make one sequence',default=5,type=int)
+parser.add_argument("-t", '--num-tokens', help='Number of words in a rows to use to make one sequence',default=8,type=int)
 args = parser.parse_args()
 
 if (args.learn is None) and (args.generate is None):

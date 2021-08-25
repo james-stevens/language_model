@@ -31,23 +31,26 @@ Generally it produces nonsense that sounds vaguely like it might be English. Jus
 `plots` is the least amount of text, so is the most meaningless. The King James Bible & The Complete Works of Shakespeare
 provide enough text to be almost meaningful and definitely reproduce something of the linguistic style of the training data.
 
+
 Example
 
-	$ ./language_model -g plots -n 50 -s "the man stopped"
+	./language_model -g plots -n 35 -s "he walked"
 
-	the man stopped with the rest effect of bobbili sanchez wyatt in a clinical dramatic line in defiance
-	of the inventor akston arrives in a clinical depression run in the third scene are forced to be a
-	serious to a girl and is facing eviction in a ritual and the other character has
+	he walked out with the family of his wife who has to leave his partial zoe
+	and zoe in a small comics peter to rescue his latest zoe who has to be removed
+	and quarantined and the
 
 	$ ./language_model -g King_James_Bible -s "Lo"  -n 35
 
-	Lo a man hath given me to be a great earthquake in a city and they were not written and
-	they shall come unto him that is of the city of God which was of God
+	Lo the Lord and to them which were with them that were with him heard that the
+	seven things which are called unto him that sat upon the horse of his mouth for
+	ever for ever
 
 	$ ./language_model -g King_James_Bible -s "Above"  -n 37
 
-	Above he was a great multitude in the temple of the earth and the earth shall come and
-	the earth and he was the second beast and the earth was not able as he is the Son
+	Above his heart was not able to make a full of the seven beasts of God which was
+	the throne and the seven and of a great city and he was the third angel which
+	is the first
 
 	$ ./language_model -g Complete_Works_of_Shakespeare -n 35 -s "inequality"
 
